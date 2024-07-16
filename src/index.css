@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .main-home, .main-finish {
+    @apply w-screen h-[100dvh] flex justify-center flex-col items-center bg-[url(https://media.idownloadblog.com/wp-content/uploads/2018/01/Mohamed-Kerroudj-WALLPPR-1.png)] bg-cover overflow-y-hidden;
+  }
+  .btn-biodata {
+    @apply h-12 bg-black text-white rounded-full w-[60%] flex justify-center items-center absolute bottom-6 hover:bg-white hover:text-black transition-all z-10;
+  }
+  .btn-list{
+    @apply h-12 bg-black text-white rounded-full w-[60%] flex justify-center items-center absolute bottom-6 mb-14 hover:text-black hover:bg-white transition-all z-10
+  }
+  .bg-base{
+    @apply bg-white/40 w-full h-full absolute top-0 bg-blend-multiply
+  }
+  .btn-kembali{
+    @apply h-12 bg-black text-white rounded-full w-[60%] flex justify-center items-center absolute bottom-6 hover:bg-white hover:text-black transition-all z-10
+  }
+  .input-style{
+    @apply w-11/12 h-10 px-3 bg-gray-400/20 pl-10 pr-3 rounded-md mx-auto focus:outline-none focus:ring-blue-300 focus:ring focus:ring-opacity-40 border  focus:border-blue-300
+  }
+}
